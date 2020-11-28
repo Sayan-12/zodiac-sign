@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Games</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to top,   #14a7cc 0%, #c3e5f7 75%, #129dc0 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 60px 0;
+    
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+</style>
+<body>
+<h1 style="text-align: center; margin-bottom: 30px; font-weight: bold; color: white;">FUN GAMES!!!!</h1>
+<div class="container gallery-container">
+
+    <h1>Please Pick Up Your Zodiac Sign</h1>
+
+    <p class="page-description text-center">Check Out !!! </p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox"  onclick="myOnClickFn()">
+                    <img src="../images/aries.jpg" alt="Park" >
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn2()">
+                    <img src="../images/taurus.jpeg" alt="Bridge" >
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox"  onclick="myOnClickFn3()">
+                    <img src="../images/gemini.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn4()" >
+                    <img src="../images/cancer.jpg" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn5()">
+                    <img src="../images/leo.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn6()">
+                    <img src="../images/virgo.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox"  onclick="myOnClickFn7()">
+                    <img src="../images/libra.jpg" alt="Rocks">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn8()">
+                    <img src="../images/scorpio.jpg" alt="Benches">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn9()">
+                    <img src="../images/sag.jpg" alt="Sky">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn10()" >
+                    <img src="../images/cap.jpg" alt="Sky">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn11()" >
+                    <img src="../images/aq.jpg" alt="Sky">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" onclick="myOnClickFn12()">
+                    <img src="../images/pis.jpg" alt="Sky">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+<script>
+    function myOnClickFn(){
+        document.location.href="sample.html";
+    }
+    function myOnClickFn2(){
+        document.location.href="sample2.html";
+    }
+    function myOnClickFn3(){
+        document.location.href="sample3.html";
+    }
+    function myOnClickFn4(){
+        document.location.href="sample4.html";
+    }
+    function myOnClickFn5(){
+        document.location.href="sample5.html";
+    }
+    function myOnClickFn6(){
+        document.location.href="sample6.html";
+    }
+    function myOnClickFn7(){
+        document.location.href="sample7.html";
+    }
+    function myOnClickFn8(){
+        document.location.href="sample8.html";
+    }
+    function myOnClickFn9(){
+        document.location.href="sample9.html";
+    }
+    function myOnClickFn10(){
+        document.location.href="sample10.html";
+    }
+    function myOnClickFn11(){
+        document.location.href="sample11.html";
+    }
+    function myOnClickFn12(){
+        document.location.href="sample12.html";
+    }
+
+</script>
+</body>
+</html>
