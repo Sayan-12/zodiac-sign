@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+
+    <title>Document</title>
+</head>
+<style>
+     body {
+        background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 60px 0;
+    
+}
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+.container.gallery-container img{
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+
+}
+.btn{
+    margin-left: 265px;
+}
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+</style>
+<body>\
+    <h1 style="text-align: center; font-size: 80px;">Here Is Your Result!!!!</h1>
+    <div class="container gallery-container">
+    <img src="../images/scorpio1.jpeg" alt="" style="height: 40%; width:40%;" id="getImage">
+    </div>
+<div class="btn">
+    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true" onclick="imagefun()">Retry</a>
+    <a class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Post</a>
+</div>
+
+<script>
+    function imagefun(){
+        var Image_Id = document.getElementById("getImage");
+        if(Image_Id.src.match("../images/scorpio1.jpeg")){
+            Image_Id.src = "../images/scorpio2.jpeg";
+        }else if
+           ( Image_Id.src.match ( "../images/scorpio2.jpeg")){
+            Image_Id.src = "../images/scorpio3.jpeg";
+           }else if( Image_Id.src.match("../images/scorpio3.jpeg")){
+               Image_Id.src = "../images/scorpio4.jpeg";
+           }else if(Image_Id.src.match("../images/scorpio4.jpeg")){
+               Image_Id.src = "../images/scorpio5.jpeg";
+           }else{
+               Image_Id.src = "../images/scorpio1.jpeg";
+           }
+           
+           
+        }
+
+    
+</script>
+</body>
+</html>
